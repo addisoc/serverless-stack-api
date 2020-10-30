@@ -40,6 +40,7 @@ export function main(event, context, callback) {
         headers: headers,
         body: JSON.stringify({ status: false })
       };
+      console.log("error code is" + error);
       callback(null, response);
       return;
     }
