@@ -7,7 +7,6 @@ export default function handler(lambda) {
       body = await lambda(event, context);
       statusCode = 200;
     } catch (e) {
-        console.log("error is" + e.message);
       body = { error: e.message };
       statusCode = 500;
     }
